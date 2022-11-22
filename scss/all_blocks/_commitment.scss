@@ -1,0 +1,16 @@
+.commitment {
+    
+    &__wrapper {
+        color: #333D4B;
+        margin-bottom: 248px;
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 445px;
+            min-height: 520px;
+            background-image: url(./../img/com_img.jpg);
+            background-size: 445px 520px;
+            border-radius: 8px;
+        }
+    }
+}

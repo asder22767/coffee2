@@ -1,0 +1,25 @@
+.quality {
+    color: #FEFCF7;
+    &__wrapper {
+        background-color: #293039;
+        position: relative;
+        border-radius: 10px;
+        margin-bottom: 168px;
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 445px;
+            min-height: 474px;
+            background-image: url(./../img/quality_img.jpg);
+            background-size: 445px 474px;
+            border-radius: 8px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(-17%, -17%);
+        }
+    }
+    &__text {
+        padding-bottom: 176px;
+    }
+}

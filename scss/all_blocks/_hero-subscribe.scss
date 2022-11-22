@@ -1,0 +1,28 @@
+.hero-subscribe {
+    margin-bottom: 136px;
+    &__container {
+        background-image: url(./../img/plan_img.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        width: 100%;
+        border-radius: 6px;
+    }
+    
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        max-width: 493px;
+        margin-left: 85px;
+    }
+    
+    &__nothing-wrapper {
+        margin-top: 117px;
+        margin-bottom: 134px;
+    }
+    
+    &__text {
+        color: #FEFCF7;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+    }
+}

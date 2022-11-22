@@ -1,0 +1,31 @@
+.footer {
+    
+    &_logo-img {
+        width: 236px;
+        height: 26px;
+    }
+    
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 47px;
+        background-color: #2C343E;
+    }
+    
+    &__logo-link {
+        margin-right: 102.9px;
+    }
+    
+    &__posts-items {
+        &:not(:last-child) {
+            margin-right: 24px;
+        }
+    }
+
+    &__post-icons {
+        width: 24px;
+        height: 24px;
+    }
+
+}

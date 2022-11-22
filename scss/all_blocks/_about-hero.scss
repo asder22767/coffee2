@@ -1,0 +1,28 @@
+.hero-about {
+    margin-bottom: 136px;
+    &__container {
+        background-image: url(./../img/ahero.png);
+        background-size: auto;
+        border-radius: 6px;
+    }
+    
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        max-width: 493px;
+        margin-left: 85px;
+    }
+    
+    &__nothing-wrapper {
+        color: #FEFCF7;
+        margin-top: 117px;
+    }
+    
+    &__heading {
+        margin-bottom: 24px;
+    }
+    
+    &__text {
+        margin-bottom: 137px;
+    }
+}

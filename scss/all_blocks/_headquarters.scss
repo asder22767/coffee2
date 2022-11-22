@@ -1,0 +1,57 @@
+.headquarters {
+    margin-bottom: 168px;
+    &__wrapper {
+        margin-left: 85px;
+    }
+    
+    &__heading {
+        font-size: 24px;
+        line-height: 32px;
+        color: #83888F;
+        margin-bottom: 80px;
+    }
+    
+    &__list {
+        display: flex;
+    }
+    
+    &__items {
+        color: #333D4B;
+        max-width: 380px;
+        width: 100%;
+        position: relative;
+        &::before {
+            content: "";
+            width: 48.84px;
+            height: 49.07px;
+            display: inline-block;
+            background-image: url(./../img/uk.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 46px;
+        }
+    }
+
+    &__items-nd {
+        &::before {
+            background-image: url(./../img/can.svg);
+        }
+    }
+
+    &__items-rd {
+        &::before {
+            background-image: url(./../img/aus.svg);
+        }
+    }
+    
+    &__items-heading {
+        max-width: 272px;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 36px; 
+        margin-bottom: 24px;
+    }
+    &__mobile-link {
+        color: #333D4B;
+    }
+}

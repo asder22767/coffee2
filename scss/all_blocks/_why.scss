@@ -1,0 +1,83 @@
+.why {
+    
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #2C343E;
+        border-radius: 10px;
+        position: relative;
+        margin-bottom: 382px;
+        padding-bottom: 286px;
+    }
+    
+    &__heading {
+        text-align: center;
+        color: #FEFCF7;
+        margin-top: 100px;
+        margin-bottom: 32px;
+    }
+    
+    &__text {
+        text-align: center;
+        color: #FEFCF7;
+        opacity: 0.8;  
+        margin-bottom: 86px;
+        max-width: 540px;
+    }
+    
+    &__list {
+        position: absolute;
+        bottom: 0;
+        transform: translate(0, 50%);
+    }
+    
+    &__items {
+        width: 350px;
+        background: #0E8784;
+        border-radius: 8px;
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+    
+    &__wrapper-smaller {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 72px 48px 48px 48px;
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 72px;
+            height: 72px;
+            background-image: url(./../img/coffee-bean.svg);
+            background-repeat: no-repeat;
+            object-fit: contain;
+            margin-bottom: 56px;
+        }
+    }
+    
+    &__items-heading {
+        text-align: center; 
+        color: #FEFCF7;
+        margin-bottom: 24px;
+    }
+    
+    &__items-text {
+        text-align: center;
+        color: #FEFCF7;
+    }
+    
+    &__items-before--img {
+        &::before {
+            background-image: url(./../img/gift.svg);
+        }
+    }
+    
+    &__items-before--img-nd {
+        &::before {
+            background-image: url(./../img/delivery.svg);
+        }
+    }
+}

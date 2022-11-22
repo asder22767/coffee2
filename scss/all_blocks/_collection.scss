@@ -1,0 +1,38 @@
+.collection {
+    background-image: url(./../img/background_collection.png);
+    background-repeat: no-repeat;
+    background-position: calc(50% - -1px) calc(50% - 164px);
+    margin-bottom: 200px;
+    
+    &__wrapper {
+        padding-top: 126px;
+    }
+    
+    &__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    &__list-items {
+        width: 255px;
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+        text-align: center;
+        color: #333D4B;
+    }
+    
+    &__img {
+        width: 255px;
+        height: 193px;
+        margin-bottom: 71px;
+        object-fit: contain;
+    }
+    
+    &__heading {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 24px;
+    }
+}

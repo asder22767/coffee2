@@ -1,0 +1,15 @@
+.header {
+    
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 44px;
+        margin-bottom: 45px;
+    }
+    
+    &__logo-img {
+        width: 236px;
+        height: 26px;
+    }
+}
