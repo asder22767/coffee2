@@ -456,6 +456,23 @@ a {
   margin-bottom: 32px;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .hero__container {
+    background-image: url(./../img/background_hero@2x.png);
+  }
+  .hero-about__container {
+    background-image: url(./../img/ahero@2x.png);
+  }
+  .commitment__wrapper::before {
+    background-image: url(./../img/com_img@2x.png);
+  }
+  .quality__wrapper::after {
+    background-image: url(./../img/quality_img@2x.jpg);
+  }
+  .hero-subscribe__container {
+    background-image: url(./../img/plan_img@2x.png);
+  }
+}
 .header__wrapper {
   display: flex;
   justify-content: space-between;
@@ -521,6 +538,9 @@ a {
   margin-bottom: 71px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+.collection__danche {
+  width: 234px;
 }
 .collection__heading {
   font-size: 24px;
