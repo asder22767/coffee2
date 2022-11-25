@@ -12,4 +12,27 @@
         width: 236px;
         height: 26px;
     }
+
+    &__menu {
+        display: none;
+    }
 }
+
+@media only screen and (max-width:600px) {
+    .header {
+        .nav-list {
+            display: none;
+        }
+        
+        &__logo-img {
+            width: 168px;
+            height: 18px;
+        }
+
+        &__menu {
+            display: block;
+            height: 15px;
+        }
+    }
+}
+

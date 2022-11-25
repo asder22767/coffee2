@@ -3,7 +3,9 @@
     
     &__container {
         background-image: url(./../img/background_hero.png);
-        background-size: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top right;
         border-radius: 6px;
     }
     
@@ -12,17 +14,99 @@
         flex-direction: column;
         max-width: 493px;
         margin-left: 85px;
-    }
-    
-    &__nothing-wrapper {
-        margin-top: 117px;
-        margin-bottom: 116px;
+        padding-top: 117px;
+        padding-bottom: 132px;
     }
     
     &__text {
         color: #FEFCF7;
         mix-blend-mode: normal;
         opacity: 0.8;
-        margin-bottom: 56px;
+        margin-bottom: 71px;
     }
+}
+
+@media only screen and (max-width:768px) {
+    .hero {
+        
+        &__container {
+            background-image: url(./../img/background_hero-tab.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top right;
+        }
+        
+        &__wrapper {
+            max-width: 398px;
+            margin-left: 58px;
+            padding-top: 104px;
+            padding-bottom: 120px;
+        }
+        
+        &__heading {
+            margin-bottom: 24px;
+        }
+        
+        &__text {
+            margin-bottom: 55px;
+        }
+    }
+    
+    .hero-heading--similarities {
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .text--similarities {
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+@media only screen and (max-width: 515px) {
+    .hero {
+        
+        &__container {
+            background-image: url(./../img/background_hero-mob.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        &__wrapper {
+            
+            align-items: center;
+            margin: 0;
+            padding-top: 100px;
+            padding-bottom: 115px;
+        }
+        
+        &__nothing-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 279px;
+        }
+        
+        &__heading {
+            margin-bottom: 24px;
+        }
+        
+        &__text {
+            text-align: center;
+            margin-bottom: 54px;
+        }
+        
+        &__link {
+            align-self: center;
+        }
+    }
+    
+    .hero-heading--similarities {
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .text--similarities {
+        font-size: 15px;
+        line-height: 25px;
+    } 
 }
