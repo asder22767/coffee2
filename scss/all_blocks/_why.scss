@@ -81,3 +81,138 @@
         }
     }
 }
+
+@media only screen and (max-width: 1149px) {
+    .why {
+        
+        &__wrapper {
+        }
+        
+        &__heading {
+        }
+        
+        &__text {
+        }
+        
+        &__list {
+        }
+        
+        &__items {
+            width: 573px;
+            margin-bottom: 24px;
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+        }
+        
+        &__wrapper-smaller {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 41px 48px 41px 70px;
+            &::before {
+                width: 56px;
+                height: 56px;
+                margin-right: 55px;
+                margin-bottom: 0;
+            }
+        }
+        
+        &__wrapper-boring {
+            width: 344px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        &__items-heading {
+            text-align: start;
+        }
+        
+        &__items-text {
+            text-align: start;
+        }
+    }
+    
+    .heading--similarities {
+        font-size: 32px;
+        line-height: 40px;
+        
+    }
+    
+    .text--similarities {
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+@media only screen and (max-width: 617px) {
+    .why {
+        
+        &__wrapper {
+            margin-bottom: 64px;
+            padding-bottom: 633px;
+        }
+        
+        &__heading {
+            margin-bottom: 24px;
+        }
+        
+        &__text {
+            margin-bottom: 64px;
+        }
+        
+        &__list {
+            display: unset;
+            transform: translate(0, 50%);
+        }
+        
+        &__items {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 279px;
+            margin-bottom: 24px;
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+        }
+        
+        &__wrapper-smaller {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 72px 33.5px 51px 33.5px;
+            &::before {
+                width: 72px;
+                height: 72px;
+                margin-right: 0;
+                margin-bottom: 56px;
+            }
+        }
+        
+        &__wrapper-boring {
+            width: 212px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        &__items-heading {
+            text-align: center;
+        }
+        
+        &__items-text {
+            text-align: center;
+        }
+    }
+    
+    .heading--similarities {
+        font-size: 32px;
+        line-height: 40px;
+        
+    }
+    
+    .text--similarities {
+        font-size: 15px;
+        line-height: 25px;
+    }
+}

@@ -549,10 +549,6 @@ a {
     font-size: 48px;
     line-height: 48px;
   }
-  .text--similarities {
-    font-size: 15px;
-    line-height: 25px;
-  }
 }
 @media only screen and (max-width: 515px) {
   .hero__container {
@@ -737,6 +733,103 @@ a {
   background-image: url(./../img/delivery.svg);
 }
 
+@media only screen and (max-width: 1149px) {
+  .why__items {
+    width: 573px;
+    margin-bottom: 24px;
+  }
+  .why__items:not(:last-child) {
+    margin-right: 0;
+  }
+  .why__wrapper-smaller {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 41px 48px 41px 70px;
+  }
+  .why__wrapper-smaller::before {
+    width: 56px;
+    height: 56px;
+    margin-right: 55px;
+    margin-bottom: 0;
+  }
+  .why__wrapper-boring {
+    width: 344px;
+    display: flex;
+    flex-direction: column;
+  }
+  .why__items-heading {
+    text-align: start;
+  }
+  .why__items-text {
+    text-align: start;
+  }
+  .heading--similarities {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .text--similarities {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 617px) {
+  .why__wrapper {
+    margin-bottom: 64px;
+    padding-bottom: 633px;
+  }
+  .why__heading {
+    margin-bottom: 24px;
+  }
+  .why__text {
+    margin-bottom: 64px;
+  }
+  .why__list {
+    display: unset;
+    transform: translate(0, 50%);
+  }
+  .why__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 279px;
+    margin-bottom: 24px;
+  }
+  .why__items:not(:last-child) {
+    margin-right: 0;
+  }
+  .why__wrapper-smaller {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 72px 33.5px 51px 33.5px;
+  }
+  .why__wrapper-smaller::before {
+    width: 72px;
+    height: 72px;
+    margin-right: 0;
+    margin-bottom: 56px;
+  }
+  .why__wrapper-boring {
+    width: 212px;
+    display: flex;
+    flex-direction: column;
+  }
+  .why__items-heading {
+    text-align: center;
+  }
+  .why__items-text {
+    text-align: center;
+  }
+  .heading--similarities {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .text--similarities {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
 .how {
   margin-bottom: 320px;
 }
