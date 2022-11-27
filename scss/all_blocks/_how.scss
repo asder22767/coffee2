@@ -11,6 +11,7 @@
     
     &__list {
         display: flex;
+        margin-bottom: 79px;
     }
     
     &__items {
@@ -76,6 +77,86 @@
     &__items-wrapper--th {
         &::before {
             content: "03";
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .how {
+        margin-bottom: 160px;
+        
+        &__wrapper {
+            margin-left: 0;
+        }
+        
+        &__heading {
+            margin-bottom: 40px;
+        }
+        
+        &__list {
+            margin-bottom: 59px;
+        }
+        
+        &__items {
+            max-width: 233px;
+        }
+        
+        &__items-wrapper {
+            
+            &::before {
+                margin-bottom: 42px;
+            }
+        }
+        
+        &__items-heading {
+            margin-bottom: 38px;
+        }
+    }
+    
+    .heading-nd-similarities {
+        font-size: 28px;
+        line-height: 32px;
+    }    
+}
+
+@media only screen and (max-width:617px) {
+    .how {
+        margin-top: 752px;
+        margin-bottom: 136px;
+        
+        &__wrapper, &__list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        &__items {
+            max-width: 350px;
+            text-align: center;
+            &:not(:last-child) {
+                margin-bottom: 56px;
+            }
+            &::before {
+                display: none;
+            }
+            &::after {
+                display: none;
+            }
+        }
+        
+        &__items-wrapper {
+            max-width: 332px;
+            &::before {
+                margin-bottom: 24px;
+            }
+            padding-top: 0;
+        }
+        
+        &__items-heading {
+            max-width: 332px;
+            text-align: center;
+            margin-bottom: 24px;
         }
     }
 }
