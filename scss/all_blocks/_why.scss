@@ -83,7 +83,13 @@
 }
 
 @media only screen and (max-width: 1149px) {
-    .why {        
+    .why {
+        &__list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
         &__items {
             width: 573px;
             margin-bottom: 24px;
@@ -98,10 +104,23 @@
             align-items: center;
             padding: 41px 48px 41px 70px;
             &::before {
+                background-image: url(./../img/coffee-bean-tab.svg);
                 width: 56px;
                 height: 56px;
                 margin-right: 55px;
                 margin-bottom: 0;
+            }
+        }
+        
+        &__items-before--img {
+            &::before {
+                background-image: url(./../img/gift-tab.svg);
+            }
+        }
+        
+        &__items-before--img-nd {
+            &::before {
+                background-image: url(./../img/delivery-tab.svg);
             }
         }
         
